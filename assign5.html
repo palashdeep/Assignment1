@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Re-sizable Browser Modifiable Adaptable Window</title>
+        <style>
+            iframe{
+                resize: "both";
+            }
+        </style>
+    </head>
+    <body>
+        Enter a URL(w/o https://):
+        <input type="text" id="text" id="text"><br>
+        <input type="button" id="go" value="GO" onclick="frameurl()"><br>
+    <iframe frameborder="1" id="frame"></iframe>
+
+    </body>
+    <script>
+
+        function frameurl(){
+            var text = document.getElementById("text").value
+           document.getElementById("frame").src = "https://" + text
+        }
+    </script>
+</html>
